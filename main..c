@@ -5,7 +5,7 @@ int main() {
 	
 	ArrayList* myArrayList = arrayList_create(3, sizeof(int));
 	
-	int a = 10, b = 20, c = 30, d = 40, e = 99;
+	int a = 8, b = 99, c = 15, d = 30, e = 44;
 	
 	arrayList_add(myArrayList, &a);
 	arrayList_add(myArrayList, &b);
@@ -14,8 +14,8 @@ int main() {
 	
 	arrayList_insert(myArrayList, &e, 1);
 	
-	int *v = (int*) arrayList_get(myArrayList, 2);
-	printf("Valor en pos 2: %d\n", *v);
+	int *v = (int*) arrayList_get(myArrayList, 4);
+	printf("Valor en posicion 3: %d\n", *v);
 	
 	arrayList_remove(myArrayList, 0);
 	arrayList_remove(myArrayList, 1);
